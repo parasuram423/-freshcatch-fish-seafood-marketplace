@@ -1,0 +1,299 @@
+ .shop-page {
+  min-height: 100vh;
+  background: #f1f3f6;
+  padding-bottom: 40px;
+}
+
+/* =========================
+   TOP SHOP SECTION
+========================= */
+
+.shop-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 30px 25px;
+  background: #ffffff;
+}
+
+.shop-heading {
+  text-align: center;
+}
+
+.shop-heading span {
+  color: #2874f0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.shop-heading h1 {
+  margin: 8px 0;
+  color: #212121;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.shop-heading p {
+  margin: 0;
+  color: #757575;
+  font-size: 15px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.shop-search {
+  max-width: 650px;
+  height: 46px;
+
+  margin: 25px auto;
+
+  display: flex;
+
+  border: 1px solid #d7dce2;
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.shop-search:focus-within {
+  border-color: #2874f0;
+  box-shadow: 0 0 0 2px rgba(40, 116, 240, 0.1);
+}
+
+.shop-search input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 0 16px;
+
+  border: none;
+  outline: none;
+
+  color: #212121;
+
+  font-size: 14px;
+}
+
+.shop-search input::placeholder {
+  color: #9e9e9e;
+}
+
+.shop-search button {
+  width: 60px;
+
+  border: none;
+
+  background: #2874f0;
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.shop-search button:hover {
+  background: #1769d1;
+}
+
+
+/* =========================
+   CATEGORY FILTERS
+========================= */
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 10px;
+}
+
+.category-filters button {
+  padding: 10px 20px;
+
+  border: 1px solid #d9dfe5;
+  border-radius: 4px;
+
+  background: #ffffff;
+  color: #424242;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.category-filters button:hover {
+  border-color: #2874f0;
+  color: #2874f0;
+}
+
+.category-filters button.active {
+  border-color: #2874f0;
+
+  background: #2874f0;
+  color: #ffffff;
+}
+
+
+/* =========================
+   PRODUCTS SECTION
+========================= */
+
+.shop-products-section {
+  max-width: 1200px;
+
+  margin: 16px auto 0;
+
+  padding: 25px 0 0;
+
+  background: #ffffff;
+}
+
+.shop-products-header {
+  padding: 0 25px 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.shop-products-header h2 {
+  margin: 0;
+
+  color: #212121;
+
+  font-size: 24px;
+}
+
+.shop-products-header p {
+  margin: 6px 0 15px;
+
+  color: #878787;
+
+  font-size: 13px;
+}
+
+.fresh-label {
+  padding: 7px 12px;
+
+  border-radius: 3px;
+
+  background: #e8f5e9;
+  color: #2e7d32;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .shop-top {
+    margin: 0 15px;
+  }
+
+  .shop-products-section {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .shop-top {
+    margin: 0 10px;
+    padding: 28px 15px 20px;
+  }
+
+  .shop-heading h1 {
+    font-size: 28px;
+  }
+
+  .shop-heading p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .shop-search {
+    height: 44px;
+    margin: 20px auto;
+  }
+
+  .shop-search input {
+    font-size: 13px;
+  }
+
+  .shop-search button {
+    width: 50px;
+  }
+
+  .category-filters {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+
+    padding-bottom: 5px;
+  }
+
+  .category-filters button {
+    flex-shrink: 0;
+
+    padding: 9px 15px;
+  }
+
+  .shop-products-section {
+    margin: 10px;
+    padding-top: 20px;
+  }
+
+  .shop-products-header {
+    padding: 0 15px 5px;
+  }
+
+  .shop-products-header h2 {
+    font-size: 20px;
+  }
+
+  .fresh-label {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .shop-heading h1 {
+    font-size: 24px;
+  }
+
+  .shop-heading span {
+    font-size: 10px;
+  }
+
+  .shop-search {
+    height: 42px;
+  }
+
+}

@@ -1,0 +1,227 @@
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  list-style: none;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-menu a:hover {
+  color: yellow;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.cart-nav-item {
+  order: 999;
+}
+
+.cart-nav-item a {
+  font-weight: bold;
+}
+
+
+/* =========================
+   CART & WISHLIST BADGES
+========================= */
+
+.cart-badge,
+.wishlist-badge {
+  margin-left: 5px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+}
+
+
+/* =========================
+   SIGN IN / SIGN UP
+========================= */
+
+.signin-nav,
+.signup-nav {
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.signin-nav {
+  border: 1px solid white;
+}
+
+.signup-nav {
+  background-color: white;
+  color: blueviolet !important;
+}
+
+.signin-nav:hover {
+  background-color: white;
+  color: blueviolet !important;
+}
+
+.signup-nav:hover {
+  opacity: 0.85;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout-nav {
+  padding: 9px 16px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-nav:hover {
+  background-color: white;
+  color: blueviolet;
+}
+
+
+/* =========================
+   USER PROFILE
+========================= */
+
+.user-profile {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-profile:hover {
+  color: yellow;
+}
+
+
+/* =========================
+   ADMIN USER
+========================= */
+
+.admin-user {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .navbar {
+    padding: 18px 25px;
+  }
+
+  .navbar-menu {
+    gap: 14px;
+  }
+
+  .navbar-menu a,
+  .logout-nav,
+  .admin-user {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 15px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .navbar-menu a,
+  .logout-nav,
+  .admin-user {
+    font-size: 14px;
+  }
+
+  .signin-nav,
+  .signup-nav,
+  .logout-nav {
+    padding: 8px 12px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .navbar {
+    padding: 15px 10px;
+  }
+
+  .navbar-menu {
+    gap: 10px 12px;
+  }
+
+  .navbar-menu a,
+  .logout-nav,
+  .admin-user {
+    font-size: 13px;
+  }
+
+}

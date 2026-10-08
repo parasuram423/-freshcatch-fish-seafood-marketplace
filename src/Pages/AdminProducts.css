@@ -1,0 +1,380 @@
+.admin-products-page {
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #f1f3f6;
+}
+
+.admin-products-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.admin-products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.admin-products-header span {
+  color: #2874f0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.admin-products-header h1 {
+  margin: 7px 0;
+  color: #212121;
+  font-size: 30px;
+}
+
+.admin-products-header p {
+  margin: 0;
+  color: #757575;
+  font-size: 14px;
+}
+
+.admin-products-header button {
+  padding: 11px 20px;
+  border: 1px solid #2874f0;
+  border-radius: 5px;
+  background: #2874f0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-products-header button:hover {
+  background: #1769d1;
+}
+
+.admin-products-toolbar {
+  margin: 20px 0;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.products-count span {
+  display: block;
+  color: #757575;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.products-count strong {
+  display: block;
+  margin-top: 4px;
+  color: #212121;
+  font-size: 24px;
+}
+
+.add-product-button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #2874f0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-product-button:hover {
+  background: #1769d1;
+}
+
+.add-product-form-section {
+  margin-bottom: 20px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.form-section-heading {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.form-section-heading span {
+  color: #2874f0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.form-section-heading h2 {
+  margin: 6px 0 0;
+  color: #212121;
+  font-size: 22px;
+}
+
+.admin-product-error {
+  margin-top: 18px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  background: #ffebee;
+  color: #c62828;
+  font-size: 13px;
+}
+
+.admin-product-form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field-full {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  margin-bottom: 7px;
+  color: #424242;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d7dce2;
+  border-radius: 4px;
+  outline: none;
+  color: #212121;
+  background: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #2874f0;
+}
+
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.form-actions button {
+  padding: 11px 20px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-actions button:first-child {
+  border: 1px solid #d7dce2;
+  background: #ffffff;
+  color: #555555;
+}
+
+.form-actions button:last-child {
+  border: none;
+  background: #2874f0;
+  color: #ffffff;
+}
+
+.form-actions button:last-child:hover {
+  background: #1769d1;
+}
+
+.products-table-section {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.products-table-wrapper {
+  overflow-x: auto;
+}
+
+.products-table-header,
+.products-table-row {
+  min-width: 1000px;
+  display: grid;
+  grid-template-columns:
+    1.7fr
+    0.9fr
+    0.8fr
+    2fr
+    0.7fr;
+  align-items: center;
+}
+
+.products-table-header {
+  padding: 15px 18px;
+  background: #f5f7fa;
+  color: #555555;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.products-table-row {
+  padding: 14px 18px;
+  border-top: 1px solid #eeeeee;
+  color: #424242;
+  font-size: 13px;
+}
+
+.admin-product-info {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-product-info img {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #f5f7f9;
+}
+
+.admin-product-info strong {
+  color: #212121;
+  word-break: break-word;
+}
+
+.product-category-badge {
+  width: fit-content;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: #e3f2fd;
+  color: #2874f0;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.admin-product-price {
+  color: #212121;
+  font-size: 15px;
+}
+
+.products-table-row p {
+  margin: 0;
+  padding-right: 15px;
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.delete-product-button {
+  width: fit-content;
+  padding: 7px 10px;
+  border: 1px solid #e53935;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #e53935;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delete-product-button:hover {
+  background: #e53935;
+  color: #ffffff;
+}
+
+.products-empty {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.products-empty > div {
+  font-size: 50px;
+}
+
+.products-empty h2 {
+  margin: 12px 0 6px;
+  color: #212121;
+}
+
+.products-empty p {
+  margin: 0;
+  color: #878787;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .admin-products-page {
+    padding: 15px;
+  }
+
+  .admin-products-header {
+    padding: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-products-header h1 {
+    font-size: 25px;
+  }
+
+  .admin-products-header button {
+    width: 100%;
+  }
+
+  .admin-products-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .add-product-button {
+    width: 100%;
+  }
+
+  .add-product-form-section {
+    padding: 18px;
+  }
+
+  .admin-product-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field-full {
+    grid-column: auto;
+  }
+
+  .form-actions {
+    grid-column: auto;
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}

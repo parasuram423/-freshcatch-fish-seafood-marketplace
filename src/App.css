@@ -1,0 +1,24 @@
+
+nav
+{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: blueviolet;
+  color:white
+}
+
+ul{
+  display:flex;
+  gap:25px;
+  list-style: none;
+    color: white;
+  cursor: pointer;
+}
+
+li:hover
+{
+  color:yellow;
+}
+
